@@ -2,12 +2,25 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\Bookings\" />
+    <Folder Include="Controllers\Payments\" />
+    <Folder Include="Models\" />
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CleanHouse.Service\CleanHouse.Service.csproj" />
+    <ProjectReference Include="..\CleanHouse.Shared\CleanHouse.Shared.csproj" />
+    <ProjectReference Include="..\CleanHouse\CleanHouse.Data.csproj" />
   </ItemGroup>
 
 </Project>
