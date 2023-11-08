@@ -2,7 +2,7 @@
 
 namespace CleanHouse.Domain.Entities;
 
-public class Service : Auditable
+public class Servicing : Auditable
 {
     public string Name { get; set; }
     public string Description { get; set; }

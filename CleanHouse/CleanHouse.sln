@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanHouse.Api", "..\CleanH
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanHouse.Shared", "..\CleanHouse.Shared\CleanHouse.Shared.csproj", "{14279369-2282-476D-AAA7-5ED98E913E1B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanHouse.ServiceTier", "..\CleanHouse.Service\CleanHouse.ServiceTier.csproj", "{E55CF057-DDC6-470F-BD66-A2D44EC1B12F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanHouse.Service", "..\CleanHouse.Service\CleanHouse.Service.csproj", "{E55CF057-DDC6-470F-BD66-A2D44EC1B12F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -15,7 +15,7 @@ public class CleanHouseDbContext : DbContext
 
     public DbSet<User> Users { get; set; }
     public DbSet<Booking> Bookings { get; set; }
-    public DbSet<Service> Services { get; set; }
+    public DbSet<Servicing> Services { get; set; }
     public DbSet<Payment> Payments { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -75,7 +75,7 @@ public class CleanHouseDbContext : DbContext
         modelBuilder.Property(u => u.Password).IsRequired();
     }
 
-    public void Configure(EntityTypeBuilder<Service> modelBuilder)
+    public void Configure(EntityTypeBuilder<Servicing> modelBuilder)
     {
         modelBuilder.ToTable(nameof(Services));
         modelBuilder.HasKey(s => s.Id);

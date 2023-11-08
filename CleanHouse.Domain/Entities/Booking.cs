@@ -9,7 +9,7 @@ public class Booking : Auditable
     public User User { get; set; } 
 
     public long ServiceId { get; set; } // Foreign key to Service
-    public Service Service { get; set; }
+    public Servicing Service { get; set; }
 
     public DateTime StartTime { get; set; }
     public DateTime EndTime { get; set; }
