@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace CleanHouse.Data.EntityConfigurations;
 
-public class BookingServiceConfigurations : IEntityTypeConfiguration<Service>
+public class BookingServiceConfigurations : IEntityTypeConfiguration<Servicing>
 {
-    public void Configure(EntityTypeBuilder<Service> builder)
+    public void Configure(EntityTypeBuilder<Servicing> builder)
     {
         builder.HasMany(s => s.Bookings)
         .WithOne(a => a.Service)

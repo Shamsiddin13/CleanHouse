@@ -1,6 +1,6 @@
 ﻿namespace CleanHouse.Service.DTOs.Users;
 
-public class UserForCreationDto
+public class ServiceForCreationDto
 {
     public string FirstName { get; set; }
     public string LastName { get; set; }
