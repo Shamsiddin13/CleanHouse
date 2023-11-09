@@ -6,5 +6,6 @@ public enum PaymentStatusType
     Authorized = 1,
     Processing = 2,
     Completed = 3,
-    Failed = 4
+    Failed = 4,
+    Canceled = 5
 }

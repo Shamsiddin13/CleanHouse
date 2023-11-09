@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
   </PropertyGroup>
@@ -10,8 +10,6 @@
     <Folder Include="DTOs\Authorization\" />
     <Folder Include="Interfaces\Authorization\" />
     <Folder Include="Services\Authorization\" />
-    <Folder Include="Services\Bookings\" />
-    <Folder Include="Services\Payments\" />
   </ItemGroup>
 
   <ItemGroup>
