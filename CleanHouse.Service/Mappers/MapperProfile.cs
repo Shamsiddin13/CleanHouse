@@ -12,7 +12,7 @@ public class MapperProfile : Profile
     public MapperProfile()
     {
         // User
-        CreateMap<User, DTOs.Users.ServiceForCreationDto>().ReverseMap();
+        CreateMap<User, DTOs.Users.UserForCreationDto>().ReverseMap();
         CreateMap<User, UserForResultDto>().ReverseMap();
         CreateMap<User, UserForUpdateDto>().ReverseMap();
 

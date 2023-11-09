@@ -22,7 +22,7 @@ public class UserService : IUserService
         _userRepository = userRepository;
     }
 
-    public async Task<UserForResultDto> AddAsync(ServiceForCreationDto dto)
+    public async Task<UserForResultDto> AddAsync(UserForCreationDto dto)
     {
         var users = await _userRepository.SelectAll()
             .Where(u => u.Phone == dto.Phone)

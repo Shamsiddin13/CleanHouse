@@ -3,7 +3,6 @@ using CleanHouse.Data.IRepositories;
 using CleanHouse.Domain.Entities;
 using CleanHouse.Service.Configurations;
 using CleanHouse.Service.DTOs.Services;
-using CleanHouse.Service.DTOs.Users;
 using CleanHouse.Service.Exceptions;
 using CleanHouse.Service.Extensions;
 using CleanHouse.Service.Interfaces.Services;
@@ -11,18 +10,18 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CleanHouse.Service.Services.Services;
 
-public class ServicingService : IServiceCoreService
+public class ServiceCoreService : IServiceCoreService
 {
     private readonly IMapper _mapper;
     private readonly IRepository<Servicing> _serviceRepository;
 
-    public ServicingService(IMapper mapper, IRepository<Servicing> serviceRepository)
+    public ServiceCoreService(IMapper mapper, IRepository<Servicing> serviceRepository)
     {
         _mapper = mapper;
         _serviceRepository = serviceRepository;
     }
 
-    public async Task<ServiceForResultDto> AddAsync(DTOs.Services.ServiceForCreationDto dto)
+    public async Task<ServiceForResultDto> AddAsync(ServiceForCreationDto dto)
     {
         var services = await _serviceRepository.SelectAll()
             .Where(u => u.ProviderId == dto.ProviderId)
